@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+   
+  <bean name="emp1" class="com.springcore.collections.Emp">
+  	<property name="name" value="Dibya" />
+  	
+  	<property name="phones">
+  		<list>
+  			<value>123456789</value>
+  			<value>321654987</value>
+  			<value>987456123</value>
+  			<null/>
+  		
+  		</list>
+  	</property>
+  	
+  	<property name="addresses">
+  		<set>
+  			<value>Rourkela</value>
+  			<value>Bhubaneswar</value>
+  			<value>Bangalore</value>
+  		
+  		</set>
+  	</property>
+  	
+  	<property name="courses">
+  		<map>
+  			<entry key="Java" value="2months" />
+  			<entry key="Python" value="1.5months" />
+  			<entry key="React" value="1months" />
+  		
+  		</map>
+  	</property>
+  	
+  	
+  	<property name="extra">
+            <props>
+                <prop key="Cricket">1St Position</prop>
+                <prop key="Badminton">2nd Position</prop>
+                <prop key="Kabaddi">3rd Position</prop>
+            </props>
+	</property>
+  	
+  
+  
+  </bean>
+</beans>
